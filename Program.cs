@@ -28,27 +28,33 @@ do
         case "1":
 
             Console.WriteLine("Here is question number 1:");
-            Console.WriteLine("How can you use four 9's to make 20?");
+            Console.WriteLine("Who is the Netherlands top-scorer of all time?");
             string answer = Console.ReadLine();
-            if (answer == "99/9+9")
+            if (answer == "Vivianne Miedema" || answer == "vivianne miedema")
             {
+                Console.WriteLine();
                 Console.WriteLine("Correct!");
                 Console.WriteLine("10 points!");
+                Console.WriteLine();
                 arrBoard[0] = "\u2713";
                 score = score + 10;
                 questionCount++;
 
                 DrawBoard();
-
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
             }
             else
             {
+                Console.WriteLine();
                 Console.WriteLine("Unfortunately, that is incorrect!");
                 arrBoard[0] = "X";
                 questionCount++;
                 DrawBoard();
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
 
 
             }
@@ -56,164 +62,211 @@ do
 
         case "2":
             Console.WriteLine("Here is question number 2:");
-            Console.WriteLine("How can you use four 9's to make 20?");
+            Console.WriteLine("Who won the Nation's league in 2024? Spain, Germany, the Netherlands or France?");
             answer = Console.ReadLine();
-            if (answer == "99/9+9")
+            if (answer == "Spain" || answer == "spain")
             {
+                Console.WriteLine();
                 Console.WriteLine("Correct!");
                 Console.WriteLine("10 points!");
+                Console.WriteLine();
                 arrBoard[1] = "\u2713";
                 score = score + 10;
                 questionCount++;
                 DrawBoard();
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
             }
             else
             {
+                Console.WriteLine();
                 Console.WriteLine("Unfortunately, that is incorrect!");
                 arrBoard[1] = "X";
                 questionCount++;
                 DrawBoard();
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
             }
             break;
 
         case "3":
             Console.WriteLine("Here is question number 3:");
-            Console.WriteLine("How can you use four 9's to make 20?");
+            Console.WriteLine("Who won the Champions League in 2024?");
             answer = Console.ReadLine();
-            if (answer == "99/9+9")
+            if (answer == "Barcelona" || answer == "barcelona")
             {
+                Console.WriteLine();
                 Console.WriteLine("Correct!");
                 Console.WriteLine("10 points!");
+                Console.WriteLine();
                 arrBoard[2] = "\u2713";
                 score = score + 10;
                 questionCount++;
                 DrawBoard();
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
             }
             else
             {
+                Console.WriteLine();
                 Console.WriteLine("Unfortunately, that is incorrect!");
                 arrBoard[2] = "X";
                 questionCount++;
                 DrawBoard();
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
             }
             break;
 
         case "4":
             Console.WriteLine("Here is question number 4:");
-            Console.WriteLine("How can you use four 9's to make 20?");
+            Console.WriteLine("Who is the current Head Coach of the English national team? Wiegman, Sampson or Neville?");
             answer = Console.ReadLine();
-            if (answer == "99/9+9")
+            if (answer == "Wiegman" || answer == "wiegman")
             {
+                Console.WriteLine();
                 Console.WriteLine("Correct!");
                 Console.WriteLine("10 points!");
+                Console.WriteLine();
                 arrBoard[3] = "\u2713";
                 score = score + 10;
                 questionCount++;
                 DrawBoard();
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
             }
             else
             {
+                Console.WriteLine();
                 Console.WriteLine("Unfortunately, that is incorrect!");
                 arrBoard[3] = "X";
                 questionCount++;
                 DrawBoard();
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
             }
             break;
 
         case "5":
             Console.WriteLine("Here is question number 5:");
-            Console.WriteLine("How can you use four 9's to make 20?");
+            Console.WriteLine("In what year was the first European Championship hosted?");
             answer = Console.ReadLine();
-            if (answer == "99/9+9")
+            if (answer == "1984")
             {
+                Console.WriteLine();
                 Console.WriteLine("Correct!");
                 Console.WriteLine("10 points!");
+                Console.WriteLine();
                 arrBoard[4] = "\u2713";
                 score = score + 10;
                 questionCount++;
                 DrawBoard();
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
             }
             else
             {
+                Console.WriteLine();
                 Console.WriteLine("Unfortunately, that is incorrect!");
                 arrBoard[4] = "X";
                 questionCount++;
                 DrawBoard();
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
             }
             break;
 
         case "6":
             Console.WriteLine("Here is question number 6:");
-            Console.WriteLine("How can you use four 9's to make 20?");
+            Console.WriteLine("How many times did the USA win the World Cup?");
             answer = Console.ReadLine();
-            if (answer == "99/9+9")
+            if (answer == "4")
             {
+                Console.WriteLine();
                 Console.WriteLine("Correct!");
                 Console.WriteLine("10 points!");
+                Console.WriteLine();
                 arrBoard[5] = "\u2713";
                 score = score + 10;
                 questionCount++;
                 DrawBoard();
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
             }
             else
             {
+                Console.WriteLine();
                 Console.WriteLine("Unfortunately, that is incorrect!");
                 arrBoard[5] = "X";
                 questionCount++;
                 DrawBoard();
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
             }
             break;
 
         case "7":
             Console.WriteLine("Here is question number 7:");
-            Console.WriteLine("How can you use four 9's to make 20?");
+            Console.WriteLine("What is the most common  high-burden injury in women's football?");
             answer = Console.ReadLine();
-            if (answer == "99/9+9")
+            if (answer == "ACL" || answer == "ACL tear" || answer == "acl" || answer == "acl tear")
             {
+                Console.WriteLine();
                 Console.WriteLine("Correct!");
                 Console.WriteLine("10 points!");
+                Console.WriteLine();
                 arrBoard[6] = "\u2713";
                 score = score + 10;
                 questionCount++;
                 DrawBoard();
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
             }
             else
             {
+                Console.WriteLine();
                 Console.WriteLine("Unfortunately, that is incorrect!");
                 arrBoard[6] = "X";
                 questionCount++;
                 DrawBoard();
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
             }
             break;
 
         case "8":
             Console.WriteLine("Here is question number 8:");
-            Console.WriteLine("How can you use four 9's to make 20?");
+            Console.WriteLine("Where will the World cup of 2025 be hosted? The Netherlands, Germany or Brasil?");
             answer = Console.ReadLine();
-            if (answer == "99/9+9")
+            if (answer == "Brasil" || answer == "brasil")
             {
+                Console.WriteLine();
                 Console.WriteLine("Correct!");
                 Console.WriteLine("10 points!");
+                Console.WriteLine();
                 arrBoard[7] = "\u2713";
                 score = score + 10;
                 questionCount++;
                 DrawBoard();
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
             }
             else
             {
+                Console.WriteLine();
                 Console.WriteLine("Unfortunately, that is incorrect!");
                 arrBoard[7] = "X";
                 questionCount++;
@@ -224,12 +277,14 @@ do
 
         case "9":
             Console.WriteLine("Here is question number 9:");
-            Console.WriteLine("How can you use four 9's to make 20?");
+            Console.WriteLine("With which number does, best player of the world, Aitana Bonmati play?");
             answer = Console.ReadLine();
-            if (answer == "99/9+9")
+            if (answer == "14")
             {
+                Console.WriteLine();
                 Console.WriteLine("Correct!");
                 Console.WriteLine("10 points!");
+                Console.WriteLine();
                 arrBoard[8] = "\u2713";
                 score = score + 10;
                 questionCount++;
@@ -242,7 +297,9 @@ do
                 arrBoard[8] = "X";
                 questionCount++;
                 DrawBoard();
+                Console.WriteLine();
                 Console.WriteLine($"Your score is: {score}");
+                Console.WriteLine();
             }
             break;
 
@@ -252,12 +309,13 @@ do
 } while (questionCount < 9);
 
 double percentage = Math.Round((Convert.ToDouble(score) / 90) * 100);
-Console.WriteLine(percentage);
 
 Console.WriteLine("Congratulations on answering all the questions!");
 Console.WriteLine("and thank you for taking the quiz :)");
+Console.WriteLine();
 Console.WriteLine($"Your score is {score}");
 Console.WriteLine($"You answered {percentage}% correct");
+Console.WriteLine();
 Console.WriteLine("Would you like to save your score? y/n");
 string saveScore = Console.ReadLine();
 if (saveScore == "y")
