@@ -1,13 +1,4 @@
-﻿// The premise: Welcome to the 2024 Women's football quiz!
-// Answer all the questions and fill out the grid
-
-
-// Layout: Tic Tac Toe board
-// Player can decide which square question to answer. There are 9 questions.
-
-using System;
-
-string[] arrBoard = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+﻿string[] arrBoard = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 int score = 0;
 int questionCount = 0;
 
@@ -19,7 +10,7 @@ DrawBoard();
 
 do
 {
-    Console.WriteLine("Choose a question you would like to start with by picking the corresponding number");
+    Console.WriteLine("Choose a question by picking the corresponding number");
 
     string choice = Console.ReadLine();
     // implementation of all the cases of the puzzle maze
@@ -32,31 +23,13 @@ do
             string answer = Console.ReadLine();
             if (answer == "Vivianne Miedema" || answer == "vivianne miedema")
             {
-                Console.WriteLine();
-                Console.WriteLine("Correct!");
-                Console.WriteLine("10 points!");
-                Console.WriteLine();
                 arrBoard[0] = "\u2713";
-                score = score + 10;
-                questionCount++;
-
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
+                correctAnswer();
             }
             else
             {
-                Console.WriteLine();
-                Console.WriteLine("Unfortunately, that is incorrect!");
                 arrBoard[0] = "X";
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
-
-
+                incorrectAnswer();
             }
             break;
 
@@ -66,28 +39,13 @@ do
             answer = Console.ReadLine();
             if (answer == "Spain" || answer == "spain")
             {
-                Console.WriteLine();
-                Console.WriteLine("Correct!");
-                Console.WriteLine("10 points!");
-                Console.WriteLine();
                 arrBoard[1] = "\u2713";
-                score = score + 10;
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
+                correctAnswer();
             }
             else
             {
-                Console.WriteLine();
-                Console.WriteLine("Unfortunately, that is incorrect!");
                 arrBoard[1] = "X";
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
+                incorrectAnswer();
             }
             break;
 
@@ -97,28 +55,13 @@ do
             answer = Console.ReadLine();
             if (answer == "Barcelona" || answer == "barcelona")
             {
-                Console.WriteLine();
-                Console.WriteLine("Correct!");
-                Console.WriteLine("10 points!");
-                Console.WriteLine();
                 arrBoard[2] = "\u2713";
-                score = score + 10;
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
+                correctAnswer();
             }
             else
             {
-                Console.WriteLine();
-                Console.WriteLine("Unfortunately, that is incorrect!");
                 arrBoard[2] = "X";
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
+                incorrectAnswer();
             }
             break;
 
@@ -128,28 +71,14 @@ do
             answer = Console.ReadLine();
             if (answer == "Wiegman" || answer == "wiegman")
             {
-                Console.WriteLine();
-                Console.WriteLine("Correct!");
-                Console.WriteLine("10 points!");
-                Console.WriteLine();
+
                 arrBoard[3] = "\u2713";
-                score = score + 10;
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
+                correctAnswer();
             }
             else
             {
-                Console.WriteLine();
-                Console.WriteLine("Unfortunately, that is incorrect!");
                 arrBoard[3] = "X";
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
+                incorrectAnswer();
             }
             break;
 
@@ -159,28 +88,13 @@ do
             answer = Console.ReadLine();
             if (answer == "1984")
             {
-                Console.WriteLine();
-                Console.WriteLine("Correct!");
-                Console.WriteLine("10 points!");
-                Console.WriteLine();
                 arrBoard[4] = "\u2713";
-                score = score + 10;
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
+                correctAnswer();
             }
             else
             {
-                Console.WriteLine();
-                Console.WriteLine("Unfortunately, that is incorrect!");
                 arrBoard[4] = "X";
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
+                incorrectAnswer();
             }
             break;
 
@@ -190,28 +104,15 @@ do
             answer = Console.ReadLine();
             if (answer == "4")
             {
-                Console.WriteLine();
-                Console.WriteLine("Correct!");
-                Console.WriteLine("10 points!");
-                Console.WriteLine();
+
                 arrBoard[5] = "\u2713";
-                score = score + 10;
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
+                correctAnswer();
             }
             else
             {
-                Console.WriteLine();
-                Console.WriteLine("Unfortunately, that is incorrect!");
+
                 arrBoard[5] = "X";
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
+                incorrectAnswer();
             }
             break;
 
@@ -221,28 +122,14 @@ do
             answer = Console.ReadLine();
             if (answer == "ACL" || answer == "ACL tear" || answer == "acl" || answer == "acl tear")
             {
-                Console.WriteLine();
-                Console.WriteLine("Correct!");
-                Console.WriteLine("10 points!");
-                Console.WriteLine();
+
                 arrBoard[6] = "\u2713";
-                score = score + 10;
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
+                correctAnswer();
             }
             else
             {
-                Console.WriteLine();
-                Console.WriteLine("Unfortunately, that is incorrect!");
                 arrBoard[6] = "X";
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
+                incorrectAnswer();
             }
             break;
 
@@ -252,26 +139,15 @@ do
             answer = Console.ReadLine();
             if (answer == "Brasil" || answer == "brasil")
             {
-                Console.WriteLine();
-                Console.WriteLine("Correct!");
-                Console.WriteLine("10 points!");
-                Console.WriteLine();
+
                 arrBoard[7] = "\u2713";
-                score = score + 10;
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
+                correctAnswer();
             }
             else
             {
-                Console.WriteLine();
-                Console.WriteLine("Unfortunately, that is incorrect!");
+
                 arrBoard[7] = "X";
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine($"Your score is: {score}");
+                incorrectAnswer();
             }
             break;
 
@@ -281,25 +157,13 @@ do
             answer = Console.ReadLine();
             if (answer == "14")
             {
-                Console.WriteLine();
-                Console.WriteLine("Correct!");
-                Console.WriteLine("10 points!");
-                Console.WriteLine();
                 arrBoard[8] = "\u2713";
-                score = score + 10;
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine($"Your score is: {score}");
+                correctAnswer();
             }
             else
             {
-                Console.WriteLine("Unfortunately, that is incorrect!");
                 arrBoard[8] = "X";
-                questionCount++;
-                DrawBoard();
-                Console.WriteLine();
-                Console.WriteLine($"Your score is: {score}");
-                Console.WriteLine();
+                incorrectAnswer();
             }
             break;
 
@@ -352,4 +216,37 @@ void DrawBoard()
         Console.WriteLine();
         Console.WriteLine("---------");
     }
+}
+
+//Method for correct answer
+
+void correctAnswer()
+{
+    Console.WriteLine();
+    Console.WriteLine("Correct!");
+    Console.WriteLine("10 points!");
+    Console.WriteLine();
+    score += 10;
+    questionCount++;
+
+    DrawBoard();
+    Console.WriteLine();
+    Console.WriteLine($"Your score is: {score}");
+    Console.WriteLine();
+
+
+}
+
+
+//Method for incorrect answer
+
+void incorrectAnswer()
+{
+
+    Console.WriteLine("Unfortunately, that is incorrect!");
+    questionCount++;
+    DrawBoard();
+    Console.WriteLine();
+    Console.WriteLine($"Your score is: {score}");
+    Console.WriteLine();
 }
